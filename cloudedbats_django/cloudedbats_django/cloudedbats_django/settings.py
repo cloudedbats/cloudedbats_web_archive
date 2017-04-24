@@ -20,12 +20,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*w-hv-o=+gek_r@!g6e6ddxi32x1w8a-x@bg&0w$0&(ziv*vu4'
+SECRET_KEY = 'im(*_8ova$y+8oh__ur5$$sc4*^0b^c_$&yf!ojn2wn70%n^p0'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 
+                 'test.cloudedbats.org']
 
 
 # Application definition
@@ -37,6 +38,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #
+    'djangoapp_cloudedbats_base',
+    'djangoapp_cloudedbats_bat_activity',
+    'djangoapp_cloudedbats_sound_files',
+    'djangoapp_cloudedbats_species',
+    'djangoapp_cloudedbats_wurbs',
+    
 ]
 
 MIDDLEWARE = [
@@ -116,5 +124,8 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
-
+STATICFILES_DIRS = [os.path.join(BASE_DIR, "djangoapp_cloudedbats_base/static")]
 STATIC_URL = '/static/'
+STATIC_ROOT = "/srv/django/cloudedbats/src/static/"
+
+
