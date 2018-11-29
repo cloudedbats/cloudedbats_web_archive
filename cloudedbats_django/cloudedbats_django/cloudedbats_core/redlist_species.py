@@ -11,7 +11,7 @@ class IucnRedList(object):
     """ """
     def __init__(self, 
                  # api_token = None,
-                 api_token = 'bb28c4e853c93383d39935eb47d778228690ec9fa4261b0fb1aa4a1c4ebbfb9a', # TODO: Move to settings.
+                 api_token = '<TOKEN>', # TODO: Move to settings.
                  debug = False):
         """ """
         self._api_token = api_token
