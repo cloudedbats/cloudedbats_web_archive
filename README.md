@@ -7,7 +7,6 @@ The web application is under development and will have functionality for:
 - Configuration and control of a number of recording units.
 - Graphical presentations of bat activity in near real time. For disconnected units the results should appear next time the unit is connected to internet.
 - Upload, download and visualisation of selected wave files. 
-- Support for publishing survey results in the DarwinCore format. 
 - Species lists, and maybe other useful information.
 
 Latest public version for test: http://test.cloudedbats.org 
