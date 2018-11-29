@@ -7,14 +7,11 @@ The web application is under development and will have functionality for:
 - Configuration and control of a number of recording units.
 - Graphical presentations of bat activity in near real time. For disconnected units the results should appear next time the unit is connected to internet.
 - Upload, download and visualisation of selected wave files. 
-- Species lists, and maybe other useful information.
+- Species lists, and maybe some other useful information.
 
-Latest public version for test: http://test.cloudedbats.org 
-and some documentation: http://test.cloudedbats.org/documentation
+The basic usage for a web server running cloudedbats_web is to manage a smaller cluster of detectors with internet connection, like the cloudedbats_wurb.
 
-Contains only a species lists: http://test.cloudedbats.org/species and an early test version for the bat activity diagram: http://test.cloudedbats.org/bat_activity
-
-The test web server is running in a virtual cloud server. Operating system is Ubuntu 16.04 and the web framework Django is used. 
+The web framework Django, written in Python, is used for cloudedbats_web.  
 
 ## Contact
 
