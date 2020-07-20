@@ -2,16 +2,25 @@
 
 This is a part of CloudedBats: http://cloudedbats.org
 
-The web application is under development and will have functionality for:
+**Note: This repository will soon be removed and replace by a new one.**
 
-- Configuration and control of a number of recording units.
-- Graphical presentations of bat activity in near real time. For disconnected units the results should appear next time the unit is connected to internet.
-- Upload, download and visualisation of selected wave files. 
-- Species lists, and maybe some other useful information.
+## Installation
 
-The basic usage for a web server running cloudedbats_web is to manage a smaller cluster of detectors with internet connection, like the cloudedbats_wurb.
+    git clone https://github.com/cloudedbats/cloudedbats_web_archive.git
+    cd cloudedbats_web_archive
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt 
+    python manage.py makemigrations
+    python manage.py migrate
+    python manage.py runserver
 
-The web framework Django, written in Python, is used for cloudedbats_web.  
+    # Web address: http://localhost:8000
+
+The only parts working in this version are:
+
+- A small example showing bat activity plotted with Bokeh.
+- The species lists with data extracted from IUCN Redlist.
 
 ## Contact
 
